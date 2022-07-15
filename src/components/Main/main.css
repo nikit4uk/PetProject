@@ -1,0 +1,72 @@
+.slick-slider .slick-arrow{
+    display: none!important;
+}
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.slide-wrap{
+    height: 100vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-wrap .container{
+    height: 100%;
+}
+
+.slide-wrap .container .info-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    margin: 0 0 0 auto;
+}
+.slide-wrap .container.left-side .info-wrap{
+    margin: 0 auto 0 0;
+}
+
+h3.slide-title{
+    display: none;
+    color: var(--second-color);
+    font-size: 36px;
+}
+img.titleImg{
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+p.slide-desc{
+    font-size: 18px;
+    margin: 50px 0 30px;
+}
+
+p.slide-actors{
+    font-size: 20px;
+    margin: 0 0 50px;
+}
+
+.slide-btns{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}

@@ -1,0 +1,32 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0; right: 0;
+    z-index: 555;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--second-color);
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    width: 200px;
+}
+
+header nav.menu{
+    display: flex;
+    align-items: center;
+}
+
+header nav.menu ul{
+    display: flex;
+}
+
+header nav.menu ul li a{
+    display: block;
+    padding: 12px 24px;
+    color: var(--accent-color);
+}
