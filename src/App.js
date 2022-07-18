@@ -1,15 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
 import './App.css';
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
+import Error from "./components/Error/Error";
 
-const App = (props) => {
-  return (
-    <main>
-      <Header />
-      <Main />
-    </main>
-  );
+export default class App extends Component {
+
+  state = {
+    hasError: false
+  }
+  
+  componentDidCatch() {
+    console.log('componentDidCatch() ');
+    this.setState({ hasError: true })
+  }
+
+  render() {
+
+    if(this.state.hasError) {
+      return (
+        <Error />
+      )
+    }
+
+    return (
+      <main>
+        <Header />
+        <Main />
+      </main>
+    );
+  }
 }
-
-export default App;

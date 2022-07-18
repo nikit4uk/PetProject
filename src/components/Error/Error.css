@@ -1,0 +1,22 @@
+section.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.error img{
+    max-width: 110px;
+    margin-bottom: 20px;
+}
+
+.error h1,
+.error h2{
+    text-transform: uppercase;
+}
+.error h1{
+    font-size: 35px;
+}
+.error h2{
+    font-size: 28px;
+}
