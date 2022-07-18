@@ -20,7 +20,7 @@ export default class MarvelService {
 
     async getActors(id) {
         const res = await this.getResource(id);
-        console.log(res.Actors)
+        // console.log(res.Actors)
         return res.Actors;
     }
 }
