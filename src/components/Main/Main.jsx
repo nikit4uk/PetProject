@@ -14,8 +14,7 @@ export default class Main extends Component {
         actorsOfET: null
     }
 
-    constructor() {
-        super();
+    componentDidMount() {
         this.updateActorsList('tt9419884');
         this.updateActorsList('tt10872600');
         this.updateActorsList('tt9032400');
