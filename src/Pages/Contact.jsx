@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 
 export default class Contact extends Component {
   render() {
-    return (
-      <p>Hello World - Contact</p>
-    )
+    return <p>Hello World - Contact</p>
   }
 }

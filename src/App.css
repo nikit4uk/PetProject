@@ -4,9 +4,20 @@
   --second-color: #EEEEEE;
 }
 
+html{
+  overflow-x: hidden;
+}
+
+body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
 main{
   background-color: var(--bg-color);
   color: var(--second-color);
+  margin-top: 60px;
 }
 
 .container{
@@ -23,6 +34,16 @@ main{
 }
 .btn-bg{
   background-color: var(--accent-color);
+}
+
+main > p{
+  margin-top: 60px;
+}
+
+.page-title{
+  text-align: center;
+  margin: 25px 0 40px;
+  font-size: 32px;
 }
 
 @media screen and (max-width:1440px){

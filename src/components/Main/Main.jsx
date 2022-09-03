@@ -23,12 +23,12 @@ export default class Main extends Component {
     updateActorsList(id) {
         this.marvel.getActors(id)
         .then((Actors) => {
-            if (id == 'tt9419884'){
+            if (id === 'tt9419884'){
                 this.setState({ 
                     actorsOfDS: Actors 
                 })
             } else {
-                if (id == 'tt10872600'){
+                if (id === 'tt10872600'){
                     this.setState({ 
                         actorsOfSM: Actors 
                     })
@@ -61,7 +61,7 @@ export default class Main extends Component {
                                 <h3 className="slide-title">{item.title}</h3>
                                 <img className='titleImg' src={item.logo} alt="film-logo" />
                                 <p className="slide-desc">{item.desc}</p>
-                                <p className="slide-actors">{item.id == '1' && actorsOfDS}{item.id == '2' && actorsOfSM}{item.id == '3' && actorsOfET}</p>
+                                <p className="slide-actors">{item.id === 1 && actorsOfDS}{item.id === 2 && actorsOfSM}{item.id === 3 && actorsOfET}</p>
                                 <div className="slide-btns">
                                     <a className="btn btn-bg" href={item.btnLink}>{item.btnText}</a>
                                 </div>

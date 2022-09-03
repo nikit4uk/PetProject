@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 
-export default class Home extends Component {
+export default class Shop extends Component {
   render() {
-    return (
-      <p>Hello World - Shop</p>
-    )
+    return <p>Hello World - Shop</p>
   }
 }

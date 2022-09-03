@@ -1,0 +1,10 @@
+.news-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-items{
+    min-width: 300px;
+    max-width: 30%;
+}
